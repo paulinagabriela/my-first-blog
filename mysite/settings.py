@@ -26,7 +26,8 @@ SECRET_KEY = 'it(9m-ekpd1_f78n@n(yf-v-dyo5_ji4bj8o^7aaxkqwcncrt$'
 DEBUG = True
 
 ALLOWED_HOSTS = [
-'paulinadzialecka.pythonanywhere.com'
+'127.0.0.1',
+'paulinadzialecka.pythonanywhere.com',
 ]
 
 
@@ -122,3 +123,7 @@ USE_TZ = True
 
 STATIC_URL = '/static/'
 STATIC_ROOT = os.path.join(BASE_DIR, 'public', 'static')
+
+STATICFILES_DIRS = (
+    os.path.join(BASE_DIR, "static"),
+)
